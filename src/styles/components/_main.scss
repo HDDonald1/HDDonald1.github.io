@@ -596,6 +596,12 @@
             font-size: $paragraph;
             width: 300px;
         }
+        &__image{
+            height: 340px;
+        }
+        &__text{
+            padding-top: 30px;
+        }
     }
     .block-header{
         &__title{
@@ -633,5 +639,4 @@
         }
     }
     
-
 }
