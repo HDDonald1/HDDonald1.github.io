@@ -700,7 +700,7 @@ registerBtn.addEventListener('click',()=>{
 function registerUser(email,phone,password){
     if(checkEmail(email) && checkPhone(phone)){
         users.push({
-            id:users.length,
+            id:users.length+1,
             mail:email,
             password,
             login:email.substring(0, email.indexOf('@')),
