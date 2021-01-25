@@ -37,7 +37,7 @@ if(window.localStorage.cart){
 }
 let currentUser = null;
 if(!window.localStorage.currentUser){
-    window.localStorage.currentUser=null;
+    window.localStorage.currentUser='null';
 }
 if(window.localStorage.currentUser){
     currentUser=window.localStorage.currentUser;
