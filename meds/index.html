@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="logo">Аптека</div>
+            <div class="search">
+                <input type="text" class="search__input">
+                <button class="search__btn">Поиск</button>
+            </div>
+            <div class="cart-container">
+                <div class="cabinet">
+                    <div class="cabinet__image">
+                        <img src="src/assets/icons/user.png" alt="user">
+                    </div> 
+                    <div class="cabinet__name">Login</div>
+                    
+                </div>
+                <div class="cart">
+                    <div class="cart__image">
+                        <img src="src/assets/icons/shopping-cart.png" alt="cart">
+                    </div>
+                    <div class="cart__sum">0₴</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container container">
+            <section class="welcome">
+                    <ul class="catalog">
+                        <li data-category='immunity'>Иммунитет</li>
+                        <li data-category='temperature'>Жаропонижающие</li>
+                        <li data-category='antibiotics'>Антибиотики</li>
+                        <li data-category='allergy'>Противоаллергические</li>
+                        <li data-category='painkillers'>Обезбаливающие</li>
+                        <li data-category='cns'>Лечение ЦНС</li>
+                        <li data-category='vitamins'>Витамины</li>
+                        <li data-category='child-food'>Детское питание</li>
+                        <li data-category='tech'> Медтехника</li>
+                        <li data-category='orto'>Ортопедические товары</li>
+                    </ul>
+                    <div class="slider">
+                        <div class="">
+                            <div class="slider__item">
+                                <div class="slider__image">
+                                    <img src="src/assets/img/b8260-6822nbdobb-1026x480.png" alt="nicorette">
+                                </div>
+                                <a href="akcija1.html" class="slider__button" target="blank">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slider__item">
+                                <div class="slider__image">
+                                    <img src="src/assets/img/b8251-78hh9oc6ka-1026x480.png" alt="nicorette">
+                                </div>
+                                <a href="#" class="slider__button">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slider__item">
+                                <div class="slider__image">
+                                    <img src="src/assets/img/banner-brand-910x220-4375.png" alt="nicorette">
+                                </div>
+                                <a href="#" class="slider__button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <div class="top-items">
+                <div class="top-items__title">
+                    Популярное
+                </div>
+                <class class="item-container">
+                </div>
+            </div>
+            <div class="items">
+                <div class="items__container container">
+                    
+                </div>
+            </div>
+            <div class="why-us">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="logo">Аптека</div>
+            <div class="copyright">© 2020-2021 HDD production</div>
+        </div>
+    </footer>
+    <div class="card-item">
+        
+    </div>
+    <div class="cartModal invisible">
+        <div class="cartModal__wrapper">
+            
+        </div>
+    </div>
+    <div class="loginModal invisible">
+        <div class="loginModal__wrapper">
+            <p>Вход</p>
+            <input type="text" class="loginModal__login loginModal__input" placeholder="Логин/телефон/почта">
+            <input type="password" class="loginModal__password loginModal__input" placeholder="Пароль">
+            <div class="btn-box">
+                <button class="loginModal__loginBtn btn">Войти</button>
+                <button class="loginModal__close btn btn_close">Закрыть</button>
+            </div>
+            <p>Регистрация</p>
+            <input type="email" placeholder="email" class="loginModal__email loginModal__input">
+            <input type="tel" placeholder="телефон" class="loginModal__phone loginModal__input">
+            <input type="password" placeholder="пароль" class="loginModal__registerPassword loginModal__input">
+            <button class="loginModal__register">Регистрация</button>
+        </div>
+    </div>
+    <div class="userCard invisible">
+        <div class="userCard__wrapper">
+            <button class="userCard__close">x</button>
+            <div class="userCard__pn">
+                <img src="https://www.mantruckandbus.com/fileadmin/media/bilder/02_19/219_05_busbusiness_interviewHeader_1485x1254.jpg" alt="" class="userCard__image userCard__field" title="Нажмите для изменения">
+                <div class="userCard__name userCard__field" title="Нажмите для изменения"></div>
+                <div class="userCard__email userCard__field" title="Нажмите для изменения"></div>
+                <div class="userCard__phone userCard__field" title="Нажмите для изменения"></div>
+                <button class="userCard__changePassword">Сменить пароль</button>
+                <button class="userCard__logOut">Выйти</button>
+            </div>
+            <p>Orders</p>
+            <div class="userCard__orders">
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="  crossorigin="anonymous"></script>
+    <script src="src/js/slick.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBb9Ifm0wk-ujCIfCNP8aI0F2zwCcJ6b6Y",
+            authDomain: "kursach-d3e5b.firebaseapp.com",
+            projectId: "kursach-d3e5b",
+            storageBucket: "kursach-d3e5b.appspot.com",
+            messagingSenderId: "1079324315311",
+            appId: "1:1079324315311:web:f485d9a6f36f8b9da70e5a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+    </script>
+    <script src="src/js/script.js"></script>
+    
+</body>
+</html>

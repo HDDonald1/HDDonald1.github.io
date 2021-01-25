@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="medWrapper">
+        <div class="addMeds">
+            Добавить препарат/устройство
+            <input type="text" class="addMeds__name" placeholder="название">
+            <select name="addMeds__category" class="addMeds__category"></select>
+            <label></label>Рецепт<input type="checkbox" class="addMeds__reciept"></label>
+            <input type="text" class="addMeds__restrictions" placeholder="Ограничения">
+            <input type="text" class="addMeds__type" placeholder="тип/кол-во">
+            <input type="text" class="addMeds__caption" placeholder="описание">
+            <input type="text" class="addMeds__photo" placeholder="Фото">
+            <input type="text" class="addMeds__price" placeholder="цена">
+            <button class="addMeds__add">Добавить</button>
+        </div>
+        <div class="editMeds">
+            Изменить данные препарата/устройства
+            <select name="editMeds__select" class="editMeds__select" size="1">
+            </select>
+            <input type="text" placeholder="Название" class="editMeds__name">
+            <input type="text" placeholder="Цена" class="editMeds__price">
+            <input type="text" placeholder="Описание" class="editMeds__descr">
+            <button class="editMeds__edit">Изменить</button>
+        </div>
+    </div>
+    <div class="orders">
+        Список заказов
+        <div class="orders__list">
+            
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBb9Ifm0wk-ujCIfCNP8aI0F2zwCcJ6b6Y",
+            authDomain: "kursach-d3e5b.firebaseapp.com",
+            projectId: "kursach-d3e5b",
+            storageBucket: "kursach-d3e5b.appspot.com",
+            messagingSenderId: "1079324315311",
+            appId: "1:1079324315311:web:f485d9a6f36f8b9da70e5a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+    </script>
+    <script src="src/js/admin.js"></script>
+</body>
+</html>
