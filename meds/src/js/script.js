@@ -36,6 +36,9 @@ if(window.localStorage.cart){
     cart=window.localStorage.cart.split(',');
 }
 let currentUser = null;
+if(!window.localStorage.currentUser){
+    window.localStorage.currentUser=null;
+}
 if(window.localStorage.currentUser){
     currentUser=window.localStorage.currentUser;
 }
